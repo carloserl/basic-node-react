@@ -1,0 +1,26 @@
+{
+  "name": "1node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "nodemon server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mssql": "^4.1.0",
+    "mysql": "^2.15.0",
+    "net": "^1.0.2",
+    "request": "^2.88.0",
+    "serialport": "^6.2.2",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

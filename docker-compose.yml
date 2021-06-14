@@ -1,0 +1,41 @@
+version: "3.7"
+
+services:
+  db:
+    container_name: database_mysql
+    build: ./db
+    environment:
+      MYSQL_DATABASE: bdwin
+      MYSQL_ROOT_PASSWORD: Pesamatic13102006
+      MYSQL_USER: bdmaster
+      MYSQL_PASSWORD: bdmaster
+      DATABASE_HOST: db
+    ports:
+      - "42333:3306"
+  server:
+    container_name: win-server
+    build: ./server
+    environment:
+      DATABASE_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: bdwin
+      MYSQL_USER: bdmaster
+      MYSQL_PASSWORD: bdmaster
+    ports:
+      - "6996:6996"
+    depends_on:
+      - db
+    restart: always
+    volumes:
+      - "./server:/srv/app/server"
+      - "/srv/app/server/node_modules"
+  react:
+    container_name: win
+    build: ./win
+    volumes:
+      - "./win:/srv/app/client"
+      - "/srv/app/client/node_modules"
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development

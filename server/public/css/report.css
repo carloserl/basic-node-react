@@ -1,0 +1,98 @@
+.table thead th{
+    border-bottom: 2px dashed #464646;
+    border-top: 0px solid transparent;
+}
+
+.table tbody{
+    margin-top: 50px;
+    border-top: 2px dashed #464646;
+}
+#autores{
+    margin-top: 50px;
+    border-top: 2px dashed #464646;
+}
+
+.tile-body{
+    /* border: 1px dotted  #464646; */
+    padding: 20px;
+}
+
+.contprimre2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.contprimre2p1,.contprimre2p2, .contprimre1p1, .contprimre1p2, .contprimre1p3, .contprimre1p4{
+    display: flex;
+}
+
+.contprimre2p1{
+    padding-right: 10px;
+}
+
+.contprimre2p2{
+    padding-left: 10px;
+}
+
+.contprimre2p1 label, .contprimre2p2 label{
+    width: 90px;
+    line-height: 30px;
+}
+
+.contprimre1p1 label, .contprimre1p2 label, .contprimre1p3 label, .contprimre1p4 label{
+    width: 90px;
+    line-height: 19px;
+    height: 20px;
+}
+
+.contprimre2p1 input, .contprimre2p2 input{
+    width:115px;
+    height:30px;
+    border: 0px solid transparent;
+}
+
+.contprimre1p1 input, .contprimre1p2 input, .contprimre1p3 input, .contprimre1p4 input{
+    width:115px;
+    height:20px;
+    border: 0px solid transparent;
+}
+
+
+.contprimre3{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.contprimre3 h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -110px;
+}
+/**************************************************/
+#sampleTable{
+    width: 100%;
+}
+
+
+#sampleTable th,
+#sampleTable td {
+  padding: 15px 18px;
+  text-align: center;
+ 
+}
+
+#sampleTable th{
+    font-size: 12px;
+}
+
+#sampleTable td{
+    font-size: 11px;
+}
+
+
+

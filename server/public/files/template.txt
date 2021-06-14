@@ -1,0 +1,9 @@
+^XA
+^LH30,30^FS
+^FO10,10^AUN,16,11 ^FD FUNCION DEL CENTRO, C.A. ^FS
+^FO10,60^AUN,16,11 ^FD Proveedor: {Campo1} ^FS
+^FO10,110^AUN,16,11 ^FD Acta: {Campo2} ^FS
+^FO10,160^AUN,16,11 ^FD Material: {Campo3} ^FS
+^FO10,210^AUN,16,11 ^FD Lote: {Campo4} ^FS
+^FO10,260^AUN,16,11 ^FD Peso: {Gross} ^FS
+^XZ

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta http-equiv="Cache-Control" content="no-store" />
+  <meta name="description" content="">
+  <!-- Twitter meta-->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="@pratikborsadiya">
+  <meta property="twitter:creator" content="@pratikborsadiya">
+  <!-- Open Graph Meta-->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CPM-WEB">
+  <meta property="og:title" content="CPM-WEB">
+  <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+  <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+  <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+  <title>CPM-WEB</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/iconoPM.jpg">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/stylep.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .red{
+  color: #b42a2a!important;
+}
+
+.green{
+  color: #2da397 !important;
+}
+
+.black{
+  color: rgb(0, 0, 0) !important;
+}
+
+.myCanvas{
+  height: 100%;
+  width: 100%;
+}
+    </style>
+
+
+</head>
+
+<body class="app sidebar-mini rtl">
+  <!-- Navbar-->
+  <header class="app-header"><a class="app-header__logo" href="index.html">Pesamatic</a>
+    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+    <!-- Navbar Right Menu-->
+    <ul class="app-nav">
+      <li class="app-search">
+        <input class="app-search__input" type="search" placeholder="Search">
+        <button class="app-search__button"><i class="fa fa-search"></i></button>
+      </li>
+      <!--Notification Menu-->
+      <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i
+            class="fa fa-bell-o fa-lg"></i></a>
+        <ul class="app-notification dropdown-menu dropdown-menu-right">
+          <li class="app-notification__title">tu tienes 4 notificaciones</li>
+          <div class="app-notification__content">
+            <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i
+                      class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                <div>
+                  <p class="app-notification__message">Lisa sent you a mail</p>
+                  <p class="app-notification__meta">2 min ago</p>
+                </div>
+              </a></li>
+            <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i
+                      class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                <div>
+                  <p class="app-notification__message">Servidor de correo no funciona</p>
+                  <p class="app-notification__meta">5 min ago</p>
+                </div>
+              </a></li>
+            <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i
+                      class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                <div>
+                  <p class="app-notification__message">Transaction complete</p>
+                  <p class="app-notification__meta">2 days ago</p>
+                </div>
+              </a></li>
+            <div class="app-notification__content">
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span
+                      class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Lisa sent you a mail</p>
+                    <p class="app-notification__meta">2 min ago</p>
+                  </div>
+                </a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span
+                      class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Mail server not working</p>
+                    <p class="app-notification__meta">5 min ago</p>
+                  </div>
+                </a></li>
+              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span
+                      class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                  <div>
+                    <p class="app-notification__message">Transaction complete</p>
+                    <p class="app-notification__meta">2 days ago</p>
+                  </div>
+                </a></li>
+            </div>
+          </div>
+          <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
+        </ul>
+      </li>
+      <!-- User Menu-->
+      <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i
+            class="fa fa-user fa-lg"></i></a>
+        <ul class="dropdown-menu settings-menu dropdown-menu-right">
+          <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+          <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+          <li><a class="dropdown-item" href="#" id="logout"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <!-- Sidebar menu-->
+  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+  <aside class="app-sidebar">
+    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg"
+        alt="User Image">
+      <div>
+        <p class="app-sidebar__user-name" id="autentification"></p>
+        <p class="app-sidebar__user-designation">Administrador</p>
+      </div>
+    </div>
+    <ul class="app-menu">
+      <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+      
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span
+            class="app-menu__label">Administración</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <ul class="treeview-menu">
+          <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Seguridad</a></li>
+          <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i
+                class="icon fa fa-circle-o"></i> Font Icons</a></li>
+          <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
+          <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
+        </ul>
+      </li>
+
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span
+            class="app-menu__label">Seguridad</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <ul class="treeview-menu">
+          <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
+          <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
+          <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
+          <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form
+              Notifications</a></li>
+        </ul>
+      </li>
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span
+            class="app-menu__label">Tablas</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <ul class="treeview-menu">
+          <!-- <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li> -->
+          <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
+        </ul>
+      </li>
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa  fa-folder"></i><span
+            class="app-menu__label">Reportes</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <ul class="treeview-menu">
+          <li><a class="treeview-item" href="report-users.html"><i class="icon fa fa-circle-o"></i> Llenado</a></li>
+          <li><a class="treeview-item" href="report-img.html"><i class="icon fa fa-circle-o"></i> Imagenes</a></li>
+          <li><a class="treeview-item" href="report-tickets.html"><i class="icon fa fa-circle-o"></i> Tickets</a></li>
+          <!-- <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li> -->
+        </ul>
+      </li>
+
+    </ul>
+  </aside>
+  <main class="app-content tile4">
+    <div class="app-title">
+      <div>
+        <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
+        <p>Gráficas y datos principales</p>
+      </div>
+      <ul class="app-breadcrumb breadcrumb">
+        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <div class="tile tile2 tile3">
+      <div class="tile">
+        <div class="row margr">
+          <div class="widget-small info coloured-icon shad">
+            <i class="icon fa fa-truck fa-3x bordrr"></i>
+          </div>
+          <div class="col-lg-12 flexb">
+            <div class="cont1">
+              <div class="balanza1 partb1">
+                <h1 id="bal1"></h1>
+                <h3>Balanza 1</h3>
+              </div>
+              <div class="balanza1 partb2">
+                  <i class="fa fa-balance-scale partbt2" aria-hidden="true"></i>
+              </div>
+              <div class="balanza1 partb3">
+                  <div class="colornum">
+                      <div class="color1nu"></div>
+                      <h3>En Movimiento</h3>
+                      <div class="color2nu"></div>
+                      <h3>Estable</h3>
+                  </div>
+              </div>
+              <div class="balanza1 partb4">
+                  <h2 id="lastpesso"></h2>
+                  <h3>Ultimo peso registrado</h2>
+              </div>
+            </div>
+            <div class="cont2">
+              <h1>Nueva Transacción</h1>
+              <div class="newtranss">
+                <div class="contentnewtt1">
+                  <h2>Hora de la transsaccion</h2>
+                  <h3 class="horatrans1">10:12:56</h3>
+                  <h2 class="margtop">Fecha de la transsaccion</h2>
+                  <h3 class="fechatrans1">September 13, 2018</h3>
+                </div>
+                <div class="contentnewtt2">
+                  <h2 class="awd">Datos de pesaje:</h2>
+                  <div class="contentpeso">
+                      <div class="brutortt">
+                          <h3 class="brutotrans1">222.51</h3>
+                          <h4 class="div1c"></h4>
+                          <h2>Bruto</h2>
+                      </div>
+                      <div class="tarartt">
+                          <h3 class="taratrans1">0</h3>
+                          <h4 class="div2c"></h4>
+                          <h2>Tara</h2>
+                      </div>
+                      <div class="netortt">
+                          <h3 class="netotrans1">222.51</h3>
+                          <h4 class="div3c"></h4>
+                          <h2>Neto</h2>
+                      </div>
+                  </div>
+                  <div class="transsaccioncode">
+                    <h2 class="transcod">n° transsaccion: </h2>
+                    <h2 class="transcode">110918155138</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row tile3">
+        <div class="col-md-6">
+          <div class="tile notpadding">
+              <div class="iconcam widget-small info coloured-icon shadaa">
+                  <i class="icon fa fa-video-camera fa-3x iconcamera"></i>
+              </div>
+              <canvas id="miniCanvas1" class="myCanvas"></canvas>
+              <div class="infocam1 infocam">
+                <div class="separatorinfo"></div>
+                <h2 class="infoname">Cámara 1</h2>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="tile notpadding">
+                <div class="iconcam widget-small info coloured-icon shadaa">
+                    <i class="icon fa fa-video-camera fa-3x iconcamera"></i>
+                </div>
+                <canvas id="miniCanvas2" class="myCanvas"></canvas>
+                <div class="infocam2 infocam">
+                  <div class="separatorinfo"></div>
+                  <h2 class="infoname">Cámara 2</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="row tile3" >
+        <div class="col-sm-12 col-md-10 funtiontable1">
+            <div class="form-group  col1select">
+              <h3 class="h3f1">Mostrar </h3>
+                <select name="state" id="maxRows" class="form-control formss" style="width:85px;">
+                       <option value="10">10</option>
+                       <option value="20">20</option>
+                       <option value="50">50</option>
+                       <option value="100">Todos</option>
+                 </select>
+           </div>      
+          </div>
+        <div class="col-md-12">
+        <div class="tile removepa">
+            <table class="table" id="lasttransaccion">
+                <thead class="thead-dark">
+                  <tr>
+                      <th class="col0tah pdfh">ID</th>
+                      <th class="col1tah pdfh1">Fecha</th>
+                      <th class="col2tah pdfh2">Transaccion</th>
+                      <th class="col3tah pdfh3">Bal</th>
+                      <th class="col4tah pdfh4">Barril</th>
+                      <th class="col5tah pdfh5">D1</th>
+                      <th class="col6tah pdfh6">D2</th>
+                      <th class="col7tah pdfh7">D3</th>
+                      <th class="col8tah pdfh8">Usuario</th>
+                      <th class="col9tah pdfh9">Bruto</th>
+                      <th class="col10tah pdfh10">Tara</th>
+                      <th class="col11tah pdfh11">Neto</th>
+                      <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="lasttrans">
+
+                </tbody>
+              </table>
+              <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                   <div class="pagination-container Page navigation col2select paddpa">
+                       <nav aria-label="...">
+                           <ul class="pagination pagination-sm"></ul>
+                       </nav>
+                     </div>
+                   </div>
+              </div>
+        </div>
+        </div>
+    </div>
+    <div id="s1" class="ss">
+      <div id="s2" class="sss"></div>
+    </div>
+  </main>
+  <!-- Essential javascripts for application to work-->
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+<!--*******************************************************-->
+
+  <!-- The javascript plugin to display page loading on top-->
+  <!-- <script src="js/url.js"></script> -->
+  <script src="js/getlogin.js"></script>
+  <script src="js/plugins/pace.min.js"></script>
+  <script src="js/plugins/sweetAlert.all.min.js"></script>
+
+  
+  <!-- Page specific javascripts-->
+  <script type="text/javascript" src="js/plugins/chart.js"></script>
+
+  <script src="js/trans2.js"></script>
+  <script src="js/trans.js"></script>
+
+
+  <!--socket.io -->
+  <script src="js/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/bal.js"></script>
+</body>
+
+</html>

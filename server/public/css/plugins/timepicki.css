@@ -1,0 +1,224 @@
+
+/* 
+Created on: 17 Sep, 2014, 4:29:37 PM
+Author: senthil
+*/
+
+.timepicker_wrap::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: -8px;
+	left: 50%;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) rotate(45deg);
+	-o-transform: translateX(-50%) rotate(45deg);
+	border-top-left-radius: 4px;
+	background-color: #1f1d1d;
+  }
+
+.ti_tx,
+.mi_tx,
+.mer_tx {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+
+
+
+.time{
+	width: 100%;
+	background-color:  #1f1d1d;
+	padding: 10px;
+	display: flex;
+	margin: auto;
+	border-top-left-radius: 6px; ;
+	border-top-right-radius: 6px; ;
+}
+
+
+.time .prev,
+.time .next {
+	cursor: pointer;
+	padding: 15px;
+	width: 25%;
+	margin: auto;
+	transition: all 0.5s linear;
+	color: #a5a1a1;
+}
+
+.time .prev::before{
+	content: ">";
+	font-size: 13px;
+	
+}
+
+.time .next::before{
+	content: "<";
+	font-size: 13px;
+
+}
+
+
+.mins .prev:hover,
+.mins .next:hover {
+  color: #1f1d1d;
+}
+
+.mins{
+	width: 100%;
+	
+	display: flex;
+	margin: auto;
+	color: #1f1d1d;
+
+}
+
+
+
+.mins .prev,
+.mins .next {
+	cursor: pointer;
+	padding: 15px;
+	width: 25%;
+	margin: auto;
+	transition: all 0.5s linear;
+	color: #a5a5a5;
+}
+
+.mins .prev::before{
+	content: ">";
+	font-size: 13px;
+	
+}
+
+.mins .next::before{
+	content: "<";
+	font-size: 13px;
+
+}
+
+
+.mins .prev:hover,
+.mins .next:hover {
+  color: #1f1d1d;
+}
+
+
+.meridian{
+	width: 100%;
+	
+	display: flex;
+	margin: auto;
+	color: #1f1d1d;
+
+}
+
+
+
+.meridian .prev,
+.meridian .next {
+	cursor: pointer;
+	padding: 15px;
+	width: 25%;
+	margin: auto;
+	transition: all 0.5s linear;
+	color: #a5a5a5;
+}
+
+.meridian .prev::before{
+	content: ">";
+	font-size: 13px;
+	
+}
+
+.meridian .next::before{
+	content: "<";
+	font-size: 13px;
+
+}
+
+
+.meridian .prev:hover,
+.meridian .next:hover {
+  color: #1f1d1d;
+}
+
+
+
+
+
+
+
+.next {
+	background-position: 50% 150%;
+}
+
+.prev {
+	background-position: 50% -50%;
+}
+
+.time_pick {
+	position: relative;
+}
+
+.timepicker_wrap {
+	border-radius: 6px;
+	z-index: 998;
+	display: none;
+	box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.3);
+	background: #fff;
+
+	float: left;
+	position: absolute;
+	top: 27px;
+	left: 0;
+}
+
+.arrow_top {
+	position: absolute;
+	top: -10px;
+	left: 20px;
+	background: url(../images/top_arr.png) no-repeat;
+	width: 18px;
+	height: 10px;
+	z-index: 999;
+}
+.time input.timepicki-input {
+	background: transparent;
+		font-size: 24px;
+		font-weight: 700;
+    	float: none;
+    	margin: 0;
+    	text-align: center;
+		width: 70%;
+		color: #fff;
+		border: 0px;
+}
+
+.mins input.timepicki-input, .meridian input.timepicki-input {
+	background: transparent;
+		font-size: 24px;
+		font-weight: 700;
+    	float: none;
+    	margin: 0;
+    	text-align: center;
+		width: 70%;
+		color: #212529;
+		border: 0px;
+}
+
+
+
+input.timepicki-input:focus{
+	border: 0px solid transparent;
+    outline: 0;
+}
+a.reset_time {
+	float: left;
+	margin-top: 5px;
+	color: #000;
+}
