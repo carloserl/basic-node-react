@@ -6,7 +6,7 @@ services:
     build: ./db
     environment:
       MYSQL_DATABASE: bdwin
-      MYSQL_ROOT_PASSWORD: Pesamatic13102006
+      MYSQL_ROOT_PASSWORD: bdwin
       MYSQL_USER: bdmaster
       MYSQL_PASSWORD: bdmaster
       DATABASE_HOST: db
